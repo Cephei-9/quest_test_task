@@ -165,6 +165,15 @@ MonoBehaviour:
       guid: 69159f4c3e2d0624dae5c6e45e7431e1
   - Id: Scripts
     Resources:
-    - name: StartGame
+    - name: StartGameScript
       pathPrefix: Scripts
       guid: 595e8996a7404cf4d8e43a7f1790787c
+    - name: CabinetScript
+      pathPrefix: Scripts
+      guid: e6ed463eced757643b3dffc9dc1d3348
+    - name: HallScript
+      pathPrefix: Scripts
+      guid: cfbd4045f21980d43b34ea7aedec578a
+    - name: BasementScript
+      pathPrefix: Scripts
+      guid: f0c08d09076fdf948bc1b160514bbde6

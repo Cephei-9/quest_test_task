@@ -1,0 +1,5 @@
+@back Hall
+@char Girl.Default pose:Default222
+
+@choice "→ В кабинет" goto:CabinetScript        ; переходим в скрипт SafeRoom.nani
+@choice "↓ В подвал" goto:BasementScript       ; переходим в скрипт Basement.nani

@@ -1,0 +1,8 @@
+@back Cabinet
+@hideChars time:0
+
+Narrator: Шкаф закован ржавыми цепями. Без ключа его не открыть.
+@hide Dialogue
+
+@choice "→ В Холл" goto:HallScript        ; переходим в скрипт SafeRoom.nani
+@choice "↓ В подвал" goto:BasementScript       ; переходим в скрипт Basement.nani

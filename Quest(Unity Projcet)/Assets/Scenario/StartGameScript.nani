@@ -3,5 +3,9 @@
 Girl: Оу, как давно сюда никто не заходил.
 Girl: Ты, наверное, пришёл осмотреть этот старый особняк?)
 Girl: А можешь оказать мне услугу? Принеси, пожалуйста, один предмет из шкафа в кабинете.
+@hide Dialogue
+
 @char Girl.Default pose:Default222
-@stop
+
+@choice "→ В кабинет" goto:CabinetScript        ; переходим в скрипт SafeRoom.nani
+@choice "↓ В подвал" goto:BasementScript       ; переходим в скрипт Basement.nani
