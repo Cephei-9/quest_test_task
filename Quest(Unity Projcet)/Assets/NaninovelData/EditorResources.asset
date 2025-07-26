@@ -144,3 +144,27 @@ MonoBehaviour:
     - name: ScriptNavigatorUI
       pathPrefix: UI
       guid: 735d6aa767879aa469134858c5b2f0a7
+  - Id: Backgrounds/4a307691-3503-4e0c-82eb-fe297d36c4fe
+    Resources:
+    - name: Hall
+      pathPrefix: Backgrounds/MainBackground
+      guid: 14a835c10d4a3f34e935ead8d59e10ad
+    - name: Cabinet
+      pathPrefix: Backgrounds/MainBackground
+      guid: dbe58acc4f3f51444a8195faedd0fbeb
+    - name: Basement
+      pathPrefix: Backgrounds/MainBackground
+      guid: 69159f4c3e2d0624dae5c6e45e7431e1
+  - Id: Characters/3f17efb0-4e29-4dc0-b882-66aa96942819
+    Resources:
+    - name: Default
+      pathPrefix: Characters/Girl
+      guid: 0bd1f9c2503c9344b96db48023113bdc
+    - name: Test
+      pathPrefix: Characters/Girl
+      guid: 69159f4c3e2d0624dae5c6e45e7431e1
+  - Id: Scripts
+    Resources:
+    - name: StartGame
+      pathPrefix: Scripts
+      guid: 595e8996a7404cf4d8e43a7f1790787c
