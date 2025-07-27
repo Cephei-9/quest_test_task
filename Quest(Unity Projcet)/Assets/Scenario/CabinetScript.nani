@@ -1,4 +1,5 @@
 @back Cabinet
+@changeLocation locationId:Cabinet
 @hideChars time:0
 
 Narrator: Шкаф закован ржавыми цепями. Без ключа его не открыть.
