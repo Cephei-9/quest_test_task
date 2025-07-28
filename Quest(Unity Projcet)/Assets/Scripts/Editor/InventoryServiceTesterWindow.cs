@@ -12,7 +12,7 @@ namespace Editor
         private InventoryService _service;
         private string _itemId = DefaultItemId;
 
-        [MenuItem("Inventory Tester/InventoryTester")]
+        [MenuItem("Testing/InventoryTester")]
         public static void ShowWindow()
         {
             InventoryServiceTesterWindow window = GetWindow<InventoryServiceTesterWindow>();
