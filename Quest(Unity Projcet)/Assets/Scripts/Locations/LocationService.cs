@@ -9,7 +9,7 @@ namespace Locations
     {
         private const string DefaultLocation = "";
 
-        public ReactiveProperty<string> CurrentLocation { get; } = new(DefaultLocation);
+        public readonly ReactiveProperty<string> CurrentLocation = new(DefaultLocation);
 
         public UniTask InitializeServiceAsync()
         {
@@ -35,6 +35,7 @@ namespace Locations
             {
                 LocationId = CurrentLocation.Value
             };
+            
             stateMap.SetState(state);
         }
 

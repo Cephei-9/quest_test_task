@@ -2,4 +2,5 @@
 @changeLocation locationId:Basement
 @hideChars time:0
 
+
 @choice "В Холл" goto:HallScript        ; переходим в скрипт SafeRoom.nani
