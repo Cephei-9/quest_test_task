@@ -1,4 +1,5 @@
-﻿using TicTacToeGame;
+﻿using Naninovel;
+using TicTacToeGame;
 using UnityEditor;
 using UnityEngine;
 
@@ -43,11 +44,15 @@ namespace Editor
         private void OnGUI()
         {
             GUILayout.Label("TicTacToe Service Tester", EditorStyles.boldLabel);
-
+            
+            if (GUILayout.Button("Update Link to Service"))
+            {
+                InitializeService();
+            }
+            
             if (GUILayout.Button("Start New Game"))
             {
-                _service.ResetService();
-                _service.StartGame();
+                Engine.GetService<TicTacToeService>().StartGame();
                 _lastResult = TicTacToeGameResult.None;
             }
 

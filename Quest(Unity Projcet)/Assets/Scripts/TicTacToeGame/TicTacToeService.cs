@@ -9,11 +9,17 @@ namespace TicTacToeGame
     public class TicTacToeService : IEngineService
     {
         public readonly ReactiveProperty<bool> IsGameRunning = new();
-        
+
+        public event Action OnStartGameEvent;
         public event Action OnBoardChangedEvent;
         public event Action<TicTacToeGameResult> OnGameFinishedEvent;
         
         public CellState[,] GameBoard { get; } = new CellState[3, 3];
+
+        public TicTacToeService()
+        {
+            Debug.LogError($"Create Service");
+        }
 
         public UniTask InitializeServiceAsync()
         {
@@ -29,9 +35,8 @@ namespace TicTacToeGame
 
         public void StartGame()
         {
-            Debug.Log("[TicTacToeService] Starting game");
-            
             IsGameRunning.Value = true;
+            OnStartGameEvent?.Invoke();
         }
 
         public void MakeMove(int row, int column)
@@ -64,6 +69,7 @@ namespace TicTacToeGame
 
             Debug.Log($"[TicTacToeService] Game finished with result: {gameResult}");
             
+            OnBoardChangedEvent?.Invoke();
             OnGameFinishedEvent?.Invoke(gameResult);
             ForceFinishGame();
             
