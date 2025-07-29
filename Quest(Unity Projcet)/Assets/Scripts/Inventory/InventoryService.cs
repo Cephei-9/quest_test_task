@@ -1,15 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using Naninovel;
 using UniRx;
+using UnityEngine;
 
 namespace Inventory
 {
     [InitializeAtRuntime]
     public class InventoryService : IStatefulService<GameStateMap>
     {
+        private const string ItemVariablePrefix = "Has";
+        
         public readonly ReactiveCollection<string> ItemsCollection = new();
         public readonly ReactiveProperty<bool> IsLoading = new();
+        
+        private readonly ICustomVariableManager _variableManager;
+
+        public InventoryService(ICustomVariableManager variableManager)
+        {
+            _variableManager = variableManager;
+        }
 
         public UniTask InitializeServiceAsync()
         {
@@ -34,6 +45,7 @@ namespace Inventory
                 return;
 
             ItemsCollection.Add(itemId);
+            SetValueToNaniVariable(itemId, true);
         }
 
         public void RemoveItem(string itemId)
@@ -45,6 +57,7 @@ namespace Inventory
                 return;
 
             ItemsCollection.Remove(itemId);
+            SetValueToNaniVariable(itemId, false);
         }
 
         public void SaveServiceState(GameStateMap stateMap)
@@ -73,6 +86,15 @@ namespace Inventory
 
             IsLoading.Value = false;
             return UniTask.CompletedTask;
+        }
+
+        private void SetValueToNaniVariable(string itemId, bool value)
+        {
+            string varName = $"{ItemVariablePrefix}{itemId}";
+            _variableManager.SetVariableValue(varName, value.ToString());
+            
+            string variableValue = _variableManager.GetVariableValue(varName);
+            Debug.LogError($"var name: {varName}; Var value: {variableValue}");
         }
 
         [Serializable]

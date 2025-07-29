@@ -16,11 +16,6 @@ namespace TicTacToeGame
         
         public CellState[,] GameBoard { get; } = new CellState[3, 3];
 
-        public TicTacToeService()
-        {
-            Debug.LogError($"Create Service");
-        }
-
         public UniTask InitializeServiceAsync()
         {
             return UniTask.CompletedTask;

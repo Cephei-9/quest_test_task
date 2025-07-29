@@ -1,0 +1,3 @@
+@addItem itemId:KeyForSafe
+@set KeyForSafeTaken=true
+@stop

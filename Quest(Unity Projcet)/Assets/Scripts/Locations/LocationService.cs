@@ -41,6 +41,7 @@ namespace Locations
 
         public UniTask LoadServiceStateAsync(GameStateMap stateMap)
         {
+            CurrentLocation.Value = string.Empty;
             LocationState state = stateMap.GetState<LocationState>();
             
             if (state is null || string.IsNullOrEmpty(state.LocationId))

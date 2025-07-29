@@ -177,3 +177,6 @@ MonoBehaviour:
     - name: BasementScript
       pathPrefix: Scripts
       guid: f0c08d09076fdf948bc1b160514bbde6
+    - name: CollectKeyForSafeScript
+      pathPrefix: Scripts
+      guid: cae874d903141774e9043161b5b50338

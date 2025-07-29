@@ -2,9 +2,10 @@
 {
     public static class NaniScriptsNames
     {
-        public const string StartGameScript = "StartGameScript";
-        public const string CabinetScript = "CabinetScript";
-        public const string HallScript = "HallScript";
-        public const string BasementScript = "BasementScript";
+        public const string StartGameScript = nameof(StartGameScript);
+        public const string CabinetScript = nameof(CabinetScript);
+        public const string HallScript = nameof(HallScript);
+        public const string BasementScript = nameof(BasementScript);
+        public const string CollectKeyForSafeScript = nameof(CollectKeyForSafeScript);
     }
 }
