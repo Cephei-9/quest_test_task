@@ -1,7 +1,7 @@
 ﻿using Naninovel;
 using UnityEngine;
 
-namespace Locations
+namespace UI
 {
     public class UIInitialization : MonoBehaviour
     {

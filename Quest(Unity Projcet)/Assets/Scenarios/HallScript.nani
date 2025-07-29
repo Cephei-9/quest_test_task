@@ -1,6 +1,8 @@
 @back Hall
 @changeLocation locationId:Hall
 @char Girl.Default pose:Default222
+@if TestVar
+    Narrator: Тру
 
 
 @choice "→ В кабинет" goto:CabinetScript        ; переходим в скрипт SafeRoom.nani
