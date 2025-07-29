@@ -151,7 +151,7 @@ MonoBehaviour:
       guid: 14a835c10d4a3f34e935ead8d59e10ad
     - name: Cabinet
       pathPrefix: Backgrounds/MainBackground
-      guid: dbe58acc4f3f51444a8195faedd0fbeb
+      guid: 956138d0d8ff2ba419ed1fdb5df637eb
     - name: Basement
       pathPrefix: Backgrounds/MainBackground
       guid: 69159f4c3e2d0624dae5c6e45e7431e1
