@@ -1,10 +1,15 @@
 @if HasKeyForSafe=="True"
+    @set QuestStage="Give sphere"
+    
     @set SafeOpened=true
     @removeItem itemId:KeyForSafe
+    
     Narrator: "Цепи опали с глухим звуком. Внутри вы видите странный чёрный шар."
+    
     @hide Dialogue
     @addItem itemId:MagicSphere
 @else
+    @set QuestStage="Need key"
     Narrator: "Сейф заперт, нужно найти ключ."
     @hide Dialogue
 @endIf

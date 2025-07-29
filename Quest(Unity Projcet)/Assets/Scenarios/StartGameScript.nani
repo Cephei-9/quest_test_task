@@ -1,36 +1,15 @@
 @back Hall
 @changeLocation locationId:Hall
+
 @char Girl.Default pose:Default111
 Girl: Оу, как давно сюда никто не заходил.
 Girl: Ты, наверное, пришёл осмотреть этот старый особняк?)
 Girl: А можешь оказать мне услугу? Принеси, пожалуйста, один предмет из шкафа в кабинете.
+
+@set QuestStage="Find safe"
 @hide Dialogue
-
-
-
-
-; 1. Добавляем предмет
-@addItem itemId:Key
-
-; 2. Проверяем переменную HasKey == true
-@if HasKey == true
-    Narrator: "Переменная HasKey установлена в true — предмет успешно добавлен!"
-@endIf
-
-; 3. Удаляем предмет
-@removeItem itemId:Key
-
-@if !HasKey
-    Narrator: "Переменная HasKey установлена в false — предмет успешно удалён!"
-@else
-    Narrator: "Ошибка!"
-@endIf
-
-
-
-
-@char Girl.Default pose:Default222
-
+@hideChars
 
 @choice "→ В кабинет" goto:CabinetScript        ; переходим в скрипт SafeRoom.nani
 @choice "↓ В подвал" goto:BasementScript       ; переходим в скрипт Basement.nani
+@stop

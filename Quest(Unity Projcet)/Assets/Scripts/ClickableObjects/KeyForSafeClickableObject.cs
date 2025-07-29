@@ -1,5 +1,6 @@
 ﻿using System;
 using Locations.NaniNames;
+using NaniNames;
 using Naninovel;
 using TicTacToeGame;
 using UI;

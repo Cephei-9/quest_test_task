@@ -1,3 +1,5 @@
 @addItem itemId:KeyForSafe
 @set KeyForSafeTaken=true
+@set QuestStage="Open safe"
+
 @stop

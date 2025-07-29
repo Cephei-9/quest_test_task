@@ -1,0 +1,19 @@
+@char Girl.Default pose:Default111
+
+@if QuestStage="Find safe"
+    Girl: Как успехи?
+@elseif QuestStage="Need key"
+    Girl: Ключ, кажется может быть где-то в подвале.
+    Girl: Но будь осторожен... В подвале легко потеряться.
+    @set QuestStage="Find key"
+;@elseif QuestStage="Open safe"
+;    Girl: Как успехи?
+@elseif QuestStage="Give sphere"
+    @goto FinaleScript
+@else
+    Girl: Как успехи?
+@endif
+
+@hideChars
+@hide Dialogue
+@stop

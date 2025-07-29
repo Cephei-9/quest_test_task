@@ -21,3 +21,5 @@ MonoBehaviour:
     value: False
   - name: SafeOpened
     value: False
+  - name: QuestStage
+    value: 

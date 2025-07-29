@@ -1,6 +1,13 @@
 @back Hall
 @changeLocation locationId:Hall
-@char Girl.Default pose:Default222
+
+@if QuestStage="Open safe"
+    @char Girl.Default pose:Default111
+    Girl: "Принеси мне его скорее!"
+    Girl: "Ой, в смысле ты можешь поторопиться?"
+    @hideChars
+    @hide Dialogue
+@endif
 
 @choice "→ В кабинет" goto:CabinetScript        ; переходим в скрипт SafeRoom.nani
 @choice "↓ В подвал" goto:BasementScript       ; переходим в скрипт Basement.nani

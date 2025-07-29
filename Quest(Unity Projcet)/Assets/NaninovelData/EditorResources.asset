@@ -183,3 +183,9 @@ MonoBehaviour:
     - name: ClickToSafeScript
       pathPrefix: Scripts
       guid: 0361eaca9c782a1418f53ce9e5d9b9c1
+    - name: ClickToGirlScript
+      pathPrefix: Scripts
+      guid: a17f74de47b238d48b01097c7b6a0e35
+    - name: FinalScript
+      pathPrefix: Scripts
+      guid: 4859162b9b4cebd47a869f4601f79cb0

@@ -4,5 +4,6 @@
     {
         public const string KeyForSafeTaken = nameof(KeyForSafeTaken);
         public const string SafeOpened = nameof(SafeOpened);
+        public const string QuestStage = nameof(QuestStage);
     }
 }
