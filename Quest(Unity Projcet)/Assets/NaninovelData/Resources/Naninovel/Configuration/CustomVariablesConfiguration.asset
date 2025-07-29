@@ -19,3 +19,5 @@ MonoBehaviour:
     value: False
   - name: HasMagicSphere
     value: False
+  - name: SafeOpened
+    value: False

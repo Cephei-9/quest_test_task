@@ -7,5 +7,6 @@
         public const string HallScript = nameof(HallScript);
         public const string BasementScript = nameof(BasementScript);
         public const string CollectKeyForSafeScript = nameof(CollectKeyForSafeScript);
+        public const string ClickToSafeScript = nameof(ClickToSafeScript);
     }
 }

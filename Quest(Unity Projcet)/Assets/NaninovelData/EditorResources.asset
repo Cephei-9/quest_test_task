@@ -180,3 +180,6 @@ MonoBehaviour:
     - name: CollectKeyForSafeScript
       pathPrefix: Scripts
       guid: cae874d903141774e9043161b5b50338
+    - name: ClickToSafeScript
+      pathPrefix: Scripts
+      guid: 0361eaca9c782a1418f53ce9e5d9b9c1

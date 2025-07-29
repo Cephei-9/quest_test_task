@@ -1,0 +1,11 @@
+@if HasKeyForSafe=="True"
+    @set SafeOpened=true
+    @removeItem itemId:KeyForSafe
+    Narrator: "Цепи опали с глухим звуком. Внутри вы видите странный чёрный шар."
+    @hide Dialogue
+    @addItem itemId:MagicSphere
+@else
+    Narrator: "Сейф заперт, нужно найти ключ."
+    @hide Dialogue
+@endIf
+@stop
