@@ -1,5 +1,7 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using Naninovel;
+using SoundInfrastructure;
 using TicTacToeGame;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,11 +15,15 @@ namespace Locations.TicTarToeUI
         [SerializeField] private GameObject _drawText;
         [SerializeField] private Button _confirmButton;
         [SerializeField] private Button _backgroundButton;
+        [SerializeField] private AudioClip _winSound;
 
+        private SoundService _soundService;
         private UniTaskCompletionSource _completionSource;
 
         private void Awake()
         {
+            _soundService = Engine.GetService<SoundService>();
+            
             _confirmButton.onClick.AddListener(OnConfirmClicked);
             _backgroundButton.onClick.AddListener(OnConfirmClicked);
         }
@@ -25,6 +31,9 @@ namespace Locations.TicTarToeUI
         public async UniTask ShowGameResultAsync(TicTacToeGameResult result, CancellationToken token = default)
         {
             SetActiveText(result);
+
+            if (result == TicTacToeGameResult.PlayerWin)
+                _soundService.PlaySfx(_winSound);
 
             gameObject.SetActive(true);
             _completionSource = new UniTaskCompletionSource();

@@ -189,3 +189,11 @@ MonoBehaviour:
     - name: FinalScript
       pathPrefix: Scripts
       guid: 4859162b9b4cebd47a869f4601f79cb0
+  - Id: Audio
+    Resources:
+    - name: DefaultBackground
+      pathPrefix: Audio
+      guid: 034ea3fd69fc0534bb6535d9a3ece491
+    - name: TestSfx
+      pathPrefix: Audio
+      guid: e2ad05670a92d864fb8453fa7e8ea258

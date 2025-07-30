@@ -169,5 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9a935456cb0459baa8b1a770530259d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _clickSoundVolume: 0.4
+  _clickSound: {fileID: 8300000, guid: 8fefc6f7279a8f648a53f3c6e4d12e4d, type: 3}
   _image: {fileID: 7650702877375532009}
   _button: {fileID: 4392946122833884202}
