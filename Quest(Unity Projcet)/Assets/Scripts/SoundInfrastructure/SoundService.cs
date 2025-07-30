@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace SoundInfrastructure
 {
+    // Сервис для работы с звуком. Чтобы из каждой точки проекта мы могли централизованно работать с звуком.
+    // Пока мы только удобно включаем SFX, чтобы не привязывать звук к объекту его вызвавшему 
+    
     [InitializeAtRuntime]
     public class SoundService : IEngineService
     {

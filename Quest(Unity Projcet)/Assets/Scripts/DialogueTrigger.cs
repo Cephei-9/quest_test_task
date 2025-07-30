@@ -3,13 +3,12 @@ using UnityEngine;
 
 namespace Locations
 {
+    // Скрипт который вешается на префаб диалогового окна и цепляется к эвентам о показе и сокрытии диалога,
+    // и обновляет значения в сервисе диалога
+    
     public class DialogueTrigger : MonoBehaviour
     {
         private DialogueService _dialogueService;
-
-        private void Awake()
-        {
-        }
 
         public void OnShowDialogue()
         {

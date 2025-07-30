@@ -7,6 +7,9 @@ using UnityEngine;
 
 namespace Inventory
 {
+    // Класс реализующий логику инвентаря по строковым ключам. Он предоставляет интерфейс инвентаря, и работает с
+    // сохранениями
+    
     [InitializeAtRuntime]
     public class InventoryService : IStatefulService<GameStateMap>
     {

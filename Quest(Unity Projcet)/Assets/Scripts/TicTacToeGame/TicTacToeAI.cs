@@ -3,6 +3,8 @@ using UnityEngine;
 
 namespace TicTacToeGame
 {
+    // Класс реализующий игровую логику игры крестики-нолики. Он делает ход за ИИ и вычисляет выигрыш по полю
+    
     internal class TicTacToeAI
     {
         private static readonly System.Random randomGenerator = new();

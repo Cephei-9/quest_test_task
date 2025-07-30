@@ -5,6 +5,8 @@ using UnityEngine;
 
 namespace Locations
 {
+    // Класс который работает с всеми объектами локаций, и включает и выключает их смотря на данные из сервиса
+    
     public class LocationUIManager : MonoBehaviour
     {
         [SerializeField] private List<Location> _locations = new();
@@ -22,7 +24,7 @@ namespace Locations
                 if (!_map.ContainsKey(location.LocationId)) 
                     _map.Add(location.LocationId, location.UIObject);
                 
-                location.UIObject.Hide();
+                location.UIObject.Hide().Forget();
             }
         }
 
@@ -38,11 +40,11 @@ namespace Locations
         private void OnLocationChanged(string id)
         {
             if (_current != null) 
-                _current.Hide();
+                _current.Hide().Forget();
 
             if (_map.TryGetValue(id, out LocationUI ui))
             {
-                ui.Show();
+                ui.Show().Forget();
                 _current = ui;
             }
         }

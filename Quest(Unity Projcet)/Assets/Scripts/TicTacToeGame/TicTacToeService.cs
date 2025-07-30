@@ -5,6 +5,8 @@ using UnityEngine;
 
 namespace TicTacToeGame
 {
+    // Сервис для игры в крестики нолики. Он хранит все данные об игре и предоставляет интерфейс
+    
     [InitializeAtRuntime]
     public class TicTacToeService : IEngineService
     {

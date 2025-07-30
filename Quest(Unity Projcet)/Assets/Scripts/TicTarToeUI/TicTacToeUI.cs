@@ -7,6 +7,10 @@ using UnityEngine.UI;
 
 namespace Locations.TicTarToeUI
 {
+    // Класс отображающий игру на экране. Он работает с отдельными ячейками и с сервисом игры. По-хорошему
+    // его бы разделить на условный контроллер, который бы работал с сервисом, и на view которая бы реализовывала UI
+    // тонкости, но я решил в этом проекте не имплементировать MVC идею 
+    
     public class TicTacToeUI : MonoBehaviour
     {
         [SerializeField] private GameObject _uiContainer;

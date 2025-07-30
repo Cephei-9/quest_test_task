@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Locations
 {
+    // Базовый класс для локации который может быть расширен. Этот класс включает и отключает локации по команде, и
+    // реализует логику плавного появления и затухания
+    
     [RequireComponent(typeof(CanvasGroup))]
     public class LocationUI : MonoBehaviour
     {

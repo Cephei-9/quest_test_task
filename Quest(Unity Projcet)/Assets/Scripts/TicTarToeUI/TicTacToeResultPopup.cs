@@ -8,6 +8,9 @@ using UnityEngine.UI;
 
 namespace Locations.TicTarToeUI
 {
+    // Попап показывающий результат игры в крестики нолики. Он блокирует инпут и ожидает клика игрока.
+    // Воспроизводит звук при победе
+    
     public class TicTacToeResultPopup : MonoBehaviour
     {
         [SerializeField] private GameObject _playerWinText;

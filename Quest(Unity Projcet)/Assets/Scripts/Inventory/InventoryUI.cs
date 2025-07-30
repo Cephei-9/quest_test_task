@@ -5,6 +5,10 @@ using UnityEngine;
 
 namespace Inventory
 {
+    // Класс отображающий инвентарь на экране. Он получает данные у сервиса и назначает их отдельным слотам. По хорошему
+    // его бы разделить на условный контроллер, который бы работал с сервисом, и на view которая бы реализовывала UI
+    // тонкости, но я решил в этом проекте не имплементировать MVC идею 
+    
     public class InventoryUI : MonoBehaviour
     {
         [SerializeField] private List<InventorySlotUI> _slots = new();

@@ -4,6 +4,9 @@ using UniRx;
 
 namespace Locations
 {
+    // В игре собственный UI разделен на локации и это сервис который работает с данными для этой игровой системы.
+    // Он хранит данные о текущей локации и сохраняет их
+    
     [InitializeAtRuntime]
     public class LocationService : IStatefulService<GameStateMap>
     {
