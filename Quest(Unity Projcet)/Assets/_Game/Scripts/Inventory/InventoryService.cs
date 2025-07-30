@@ -96,8 +96,7 @@ namespace Inventory
             string varName = $"{ItemVariablePrefix}{itemId}";
             _variableManager.SetVariableValue(varName, value.ToString());
             
-            string variableValue = _variableManager.GetVariableValue(varName);
-            Debug.LogError($"var name: {varName}; Var value: {variableValue}");
+            Debug.Log($"[InventoryService] update item {itemId}; new value: {value}");
         }
 
         [Serializable]

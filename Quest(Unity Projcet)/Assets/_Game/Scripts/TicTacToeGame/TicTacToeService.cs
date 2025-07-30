@@ -43,8 +43,6 @@ namespace TicTacToeGame
 
             if(GameBoard[row, column] != CellState.Empty)
                 return;
-
-            Debug.Log($"[TicTacToeService] Player move at ({row},{column})");
             
             GameBoard[row, column] = CellState.X;
             
@@ -77,8 +75,6 @@ namespace TicTacToeGame
         {
             if (!IsGameRunning.Value)
                 return;
-            
-            Debug.Log("[TicTacToeService] Finishing game and clearing board");
             
             IsGameRunning.Value = false;
 

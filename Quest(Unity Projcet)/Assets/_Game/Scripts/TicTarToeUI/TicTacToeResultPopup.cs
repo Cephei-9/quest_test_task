@@ -34,11 +34,11 @@ namespace Locations.TicTarToeUI
         public async UniTask ShowGameResultAsync(TicTacToeGameResult result, CancellationToken token = default)
         {
             SetActiveText(result);
+            gameObject.SetActive(true);
 
             if (result == TicTacToeGameResult.PlayerWin)
                 _soundService.PlaySfx(_winSound);
-
-            gameObject.SetActive(true);
+            
             _completionSource = new UniTaskCompletionSource();
 
             await _completionSource.Task;
