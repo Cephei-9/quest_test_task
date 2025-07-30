@@ -20,7 +20,12 @@
     
 @elseif QuestStage="Give sphere"
 
-    @goto FinaleScript
+    @removeItem itemId:MagicSphere
+    @char Girl.Happy pose:Idle
+    Girl: Ты принёс его?!
+    Girl: Ты даже не представляешь, сколько веков я ждала этого момента.
+    
+    @goto FinalScript
     
 @else
 

@@ -1,2 +1,34 @@
+; ──────────────────────────────────────────────────────────────
+;  Финальная сцена
+; ──────────────────────────────────────────────────────────────
+
+@hideLocation
+@hide Dialogue time:0
+@hideChars time:0
+@stopBgm time:0
+@hide MainBackground time:0
+@wait 3
+
+@sfx EvilLaugh
+
+@wait 4
+
+@back EvilHall
+@bgm EvilMusic
+
+@char Girl.Demon pose:Idle
+
+Demon: С этим артефактом... теперь я снова свободна.
+Demon: И ты так наивно помог мне.
+Demon: Я бы поблагодарила тебя, но пожалуй не буду.
+Demon: Ты стал последним шагом...
+Demon: К началу конца!
+
+@wait 2
+
+@hide Dialogue
+@hideChars
+@stopBgm
+@hide MainBackground
 
 @stop
