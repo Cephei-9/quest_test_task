@@ -1,9 +1,15 @@
+; ──────────────────────────────────────────────────────────────
+;  Скрипт управляющий входом в локацию холла
+; ──────────────────────────────────────────────────────────────
+
+
 @back Hall
 @changeLocation locationId:Hall
 
 @if QuestStage="Open safe"
-    @char Girl.Default pose:Default111
+    @char Girl.Angry pose:Idle
     Girl: "Принеси мне его скорее!"
+    @char Girl.Happy pose:Idle
     Girl: "Ой, в смысле ты можешь поторопиться?"
     @hideChars
     @hide Dialogue

@@ -1,10 +1,17 @@
+; ──────────────────────────────────────────────────────────────
+;  Скрипт обрабатывающий клик по сейфу
+; ──────────────────────────────────────────────────────────────
+
+
 @if HasKeyForSafe=="True"
     @set QuestStage="Give sphere"
     
     @set SafeOpened=true
     @removeItem itemId:KeyForSafe
     
-    Narrator: "Цепи опали с глухим звуком. Внутри вы видите странный чёрный шар."
+    @sfx FallingChain
+    
+    Narrator: Цепи опали с глухим звуком. Внутри вы видите странный чёрный шар.
     
     @hide Dialogue
     @addItem itemId:MagicSphere

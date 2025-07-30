@@ -109,7 +109,7 @@ MonoBehaviour:
       VoiceSource: {fileID: 0}
       LinkedPrinter: 
       Poses:
-      - name: Default111
+      - name: Idle
         actorState:
           appearance: 
           visible: 0
@@ -120,18 +120,6 @@ MonoBehaviour:
           lookDirection: 0
         overriddenProperties:
         - scale
-      - name: Default222
-        actorState:
-          appearance: 
-          visible: 0
-          position: {x: -3.8400002, y: -3.78, z: 0}
-          rotation: {x: 0, y: 0, z: 0, w: 0}
-          scale: {x: 0.4, y: 0.4, z: 1}
-          tintColor: {r: 0, g: 0, b: 0, a: 0}
-          lookDirection: 0
-        overriddenProperties:
-        - scale
-        - position
   AvatarLoader:
     PathPrefix: CharacterAvatars
     ProviderTypes:

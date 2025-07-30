@@ -168,7 +168,7 @@ MonoBehaviour:
       guid: 3a5a5ef424fa2204b804bf078f525c77
     - name: Demon
       pathPrefix: Characters/Girl
-      guid: 6449f44987c5dd243ae7083bc4234e1f
+      guid: 3eb1921080cabdd4694f9dda050b0d7b
   - Id: Scripts
     Resources:
     - name: StartGameScript
@@ -197,9 +197,15 @@ MonoBehaviour:
       guid: 4859162b9b4cebd47a869f4601f79cb0
   - Id: Audio
     Resources:
-    - name: DefaultBackground
+    - name: StartMusic
       pathPrefix: Audio
       guid: 034ea3fd69fc0534bb6535d9a3ece491
-    - name: TestSfx
+    - name: FallingChain
       pathPrefix: Audio
-      guid: e2ad05670a92d864fb8453fa7e8ea258
+      guid: 643db2d1261003a4b81789e55632c276
+    - name: EvilLaugh
+      pathPrefix: Audio
+      guid: dc1ec496799bc554ab54b733078f0d6c
+    - name: EvilMusic
+      pathPrefix: Audio
+      guid: 0f8aaec341ae87547b0eb9781503caae

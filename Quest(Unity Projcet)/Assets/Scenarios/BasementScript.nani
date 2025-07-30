@@ -1,5 +1,16 @@
-@back Basement
-@changeLocation locationId:Basement
+; ──────────────────────────────────────────────────────────────
+;  Скрипт управляющий входом в подвал
+; ──────────────────────────────────────────────────────────────
+
+
 @hideChars time:0
+@back Basement
+
+Narrator: Темно. Видно силуэт скелета у стены.    
+Narrator: На стене кровью написано: Не верь ей! 
+Narrator: Это предупреждение?    
+@hide Dialogue
+
+@changeLocation locationId:Basement
 
 @stop
