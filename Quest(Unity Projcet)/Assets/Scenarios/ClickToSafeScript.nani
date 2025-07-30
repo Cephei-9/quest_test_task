@@ -10,7 +10,9 @@
     @addItem itemId:MagicSphere
 @else
     @set QuestStage="Need key"
-    Narrator: "Сейф заперт, нужно найти ключ."
+    
+    Narrator: Шкаф закован ржавыми цепями. Без ключа его не открыть.
     @hide Dialogue
 @endIf
+
 @stop

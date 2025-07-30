@@ -1,15 +1,14 @@
 @back Hall
-@changeLocation locationId:Hall
 
 @char Girl.Default pose:Default111
 Girl: Оу, как давно сюда никто не заходил.
 Girl: Ты, наверное, пришёл осмотреть этот старый особняк?)
 Girl: А можешь оказать мне услугу? Принеси, пожалуйста, один предмет из шкафа в кабинете.
 
-@set QuestStage="Find safe"
 @hide Dialogue
 @hideChars
 
-@choice "→ В кабинет" goto:CabinetScript        ; переходим в скрипт SafeRoom.nani
-@choice "↓ В подвал" goto:BasementScript       ; переходим в скрипт Basement.nani
+@changeLocation locationId:Hall
+@set QuestStage="Find safe"
+
 @stop

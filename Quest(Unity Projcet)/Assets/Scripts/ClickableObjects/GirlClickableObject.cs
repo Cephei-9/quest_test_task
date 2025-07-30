@@ -13,7 +13,6 @@ namespace ClickableObjects
         
         [SerializeField] private ClickableObject _clickableObject;
         
-        private ICustomVariableManager _variableManager;
         private ICharacterActor _characterActor;
         private IScriptPlayer _scriptPlayer;
 
@@ -22,18 +21,8 @@ namespace ClickableObjects
             _clickableObject.SetVisible(false);
         }
 
-        private bool QuestIsStarted
-        {
-            get
-            {
-                string questStage = _variableManager.GetVariableValue(NaniVariablesNames.QuestStage);
-                return !string.IsNullOrWhiteSpace(questStage);
-            }
-        }
-
         private void Start()
         {
-            _variableManager = Engine.GetService<ICustomVariableManager>();
             _scriptPlayer = Engine.GetService<IScriptPlayer>();
             
             ICharacterManager charManager = Engine.GetService<ICharacterManager>();
@@ -45,8 +34,8 @@ namespace ClickableObjects
         private void Update()
         {
             // Да это конечно не очень производительно, по хорошему конечно писать инфраструктуру для того чтобы можно было
-            // подписываться на то что актер начал диалог 
-            _clickableObject.SetVisible(!_characterActor.Visible && QuestIsStarted);
+            // подписываться на то что актер начал диалог, но пока так)
+            _clickableObject.SetVisible(!_characterActor.Visible);
         }
 
         private void OnClickHandler()

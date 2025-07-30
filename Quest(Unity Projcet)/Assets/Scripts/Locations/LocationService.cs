@@ -29,6 +29,11 @@ namespace Locations
                 CurrentLocation.Value = locationId;
         }
 
+        public void HideLocation()
+        {
+            CurrentLocation.Value = string.Empty;
+        }
+
         public void SaveServiceState(GameStateMap stateMap)
         {
             LocationState state = new()
