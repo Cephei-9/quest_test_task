@@ -160,9 +160,15 @@ MonoBehaviour:
     - name: Default
       pathPrefix: Characters/Girl
       guid: 0bd1f9c2503c9344b96db48023113bdc
-    - name: Test
+    - name: Angry
       pathPrefix: Characters/Girl
-      guid: 69159f4c3e2d0624dae5c6e45e7431e1
+      guid: 6449f44987c5dd243ae7083bc4234e1f
+    - name: Happy
+      pathPrefix: Characters/Girl
+      guid: 3a5a5ef424fa2204b804bf078f525c77
+    - name: Demon
+      pathPrefix: Characters/Girl
+      guid: 6449f44987c5dd243ae7083bc4234e1f
   - Id: Scripts
     Resources:
     - name: StartGameScript

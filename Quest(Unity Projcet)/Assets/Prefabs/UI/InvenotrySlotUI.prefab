@@ -136,8 +136,8 @@ MonoBehaviour:
   _iconImage: {fileID: 8388838987280081367}
   _iconBindings:
   - ItemId: KeyForSafe
-    Icon: {fileID: 21300000, guid: d929afa7f461fb34d9592f8c51b261b8, type: 3}
+    Icon: {fileID: 21300000, guid: efbcb63de2a6c534695ad0cb8b39c999, type: 3}
   - ItemId: MagicSphere
-    Icon: {fileID: 21300000, guid: 69159f4c3e2d0624dae5c6e45e7431e1, type: 3}
+    Icon: {fileID: 21300000, guid: 57690a0e5fa0ce841b950cfbb41faa2f, type: 3}
   _bounceAmplitude: 0.2
   _bounceDuration: 0.3

@@ -41,7 +41,7 @@ namespace Locations.TicTarToeUI
             else if (state == CellState.O)
                 _iconImage.sprite = _oSprite;
             else
-                _iconImage.color = new Color(1, 1, 1, 0.1f);
+                _iconImage.color = new Color(1, 1, 1, 0.0f);
         }
 
         private void HandleClick()
